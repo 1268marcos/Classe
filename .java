@@ -21,10 +21,10 @@ import androidx.room.PrimaryKey;
     private String mTopic;
 
     public Website(@Nullable String url, String topic, int grade, String creationDate) {
-        mName = url;
-        mStyle = topic;
-        mScore = grade;
-        mCreationDate = creationDate;
+        mUrl = url;
+        mTopic = topic;
+        mGrade = grade;
+        mCreatioDate= creationDate;
     }
 
     public int getId() {
@@ -60,12 +60,13 @@ import androidx.room.PrimaryKey;
     }
 
     public String getCreationDate() {
-        return mCreationDate;
+        return mCreatioDate;
     }
 
-    public void setCreationDate(String creationDate) {
-        mCreationDate = creationDate;
+   public void setCreationDate(String creationDate) {
+        mCreatioDate = creationDate;
     }
 
     private int mGrade;
     private String mCreatioDate;
+     }
